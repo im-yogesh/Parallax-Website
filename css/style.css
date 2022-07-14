@@ -1,0 +1,147 @@
+:root {
+  --section-color: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Top Section */
+.top-section-img,
+.second-section-img,
+.third-section-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-section-img {
+  height: 100vh;
+  background: url(../images/image1.png);
+}
+
+.parallax-heading,
+.explore-nature-heading,
+.look-deep-nature-heading,
+.do-some-coding-heading {
+  display: inline;
+  padding: 10px 18px;
+  color: #f7ece5;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 2.5vw;
+}
+
+.parallax-heading,
+.do-some-coding-heading {
+  background: #313534;
+}
+
+.section-one,
+.section-two,
+.section-three {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.section-one {
+  background: #f4f4f4;
+}
+
+.section-one-heading,
+.section-two-heading,
+.section-three-heading {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 2vw;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.section-one-heading,
+.section-one-para {
+  color: #666666;
+}
+
+.section-one-para,
+.section-two-para,
+.section-three-para {
+  text-align: center;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  padding: 10px 20px 20px 20px;
+}
+
+/* Second Section */
+.second-section-img {
+  height: 400px;
+  background: url(../images/image2.png);
+}
+
+.explore-nature-heading {
+  background: rgba(49, 53, 52, 0.2);
+}
+
+.section-two {
+  background: #313534;
+}
+
+.section-two-heading,
+.section-two-para {
+  color: var(--section-color);
+}
+
+/* Third Section */
+.third-section-img {
+  height: 400px;
+  background: url(../images/image3.png);
+}
+
+.look-deep-nature-heading {
+  background: rgba(49, 53, 52, 0.2);
+}
+
+.section-three {
+  background: #313534;
+}
+
+.section-three-heading,
+.section-three-para {
+  color: var(--section-color);
+}
+
+/* Last Section */
+.last-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(../images/image1.png);
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+  .section-one-heading,
+  .section-two-heading,
+  .section-three-heading {
+    font-size: 4vw;
+  }
+
+  .section-one-para,
+  .section-two-para,
+  .section-three-para {
+    font-size: 12px;
+  }
+
+  .parallax-heading,
+  .explore-nature-heading,
+  .look-deep-nature-heading,
+  .do-some-coding-heading {
+    font-size: 3.5vw;
+  }
+}
